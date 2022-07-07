@@ -1,7 +1,0 @@
-This python function essentially fulfills the same purpose as pandas' get_dummies function but 
-I just wrote one myself to get warmed up with python again after spending a lot of time learning other languages. 
-
-This code specifically transforms the 'gender', 'smoker', and 'region' features in the original data set into new features: 
-  'is_female', 'is_male', 'is_smoker', 'is_northeast', 'is_northwest', 'is_southeast', and 'is_southwest'. 
-  This code writes a new CSV file where the old features are replaced with these and the features that were already quantitative are unchanged. 
-  The first line of the resulting file contains new labels, but the code is otherwise ready to work with, having no missing data points or features described by strings. 
