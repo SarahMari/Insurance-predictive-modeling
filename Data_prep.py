@@ -7,10 +7,10 @@
 
 
 insurance = open('insurance.csv', 'r')
-exp_ins = open('insurance_3.csv','w')
+exp_ins = open('insurance_clean.csv','w')
 
 def expand(insurance, exp_ins):
-    #exp_ins.writelines(["age,","is_female,","is_male,","bmi,","number_children,","is_smoker,","is_northeast,","is_southeast,","is_southwest,","is_northwest,","charges\n"])
+    exp_ins.writelines(["age,","is_female,","is_male,","bmi,","number_children,","is_smoker,","is_northeast,","is_southeast,","is_southwest,","is_northwest,","charges\n"])
     insurance.readline()
     for line in insurance.readlines():
         new_values = []
